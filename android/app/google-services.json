@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "981245526196",
+    "firebase_url": "https://monktree-8bd04.firebaseio.com",
+    "project_id": "monktree-8bd04",
+    "storage_bucket": "monktree-8bd04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981245526196:android:4512c8e1a6c85e672457e1",
+        "android_client_info": {
+          "package_name": "com.example.helloworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981245526196-f5g6nkrevh9n91n0ji0t8cjk91sl3uub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQkqDaPQDLZJ03oNHP4ldyZ1Mv2Ll3ads"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981245526196-f5g6nkrevh9n91n0ji0t8cjk91sl3uub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981245526196:android:285f171fcbfe4b812457e1",
+        "android_client_info": {
+          "package_name": "com.example.monktree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981245526196-f5g6nkrevh9n91n0ji0t8cjk91sl3uub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQkqDaPQDLZJ03oNHP4ldyZ1Mv2Ll3ads"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981245526196-f5g6nkrevh9n91n0ji0t8cjk91sl3uub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
