@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helloworld/Components/constants.dart' as cst;
 
 class SubjectTile extends StatelessWidget {
   final subjectName;
@@ -8,10 +9,13 @@ class SubjectTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+      padding: EdgeInsets.symmetric(
+          horizontal: 15 * cst.responsiveCofficient(context),
+          vertical: 10 * cst.responsiveCofficient(context)),
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15),
+          borderRadius:
+              BorderRadius.circular(15 * cst.responsiveCofficient(context)),
           boxShadow: [
             BoxShadow(
                 blurRadius: 10,
@@ -21,13 +25,13 @@ class SubjectTile extends StatelessWidget {
           ],
           color: Colors.white,
         ),
-        height: 90,
+        height: 90 * cst.responsiveCofficient(context),
         child: Center(
           child: ListTile(
             title: Text(
               subjectName,
               style: TextStyle(
-                fontSize: 18,
+                fontSize: 18 * cst.responsiveCofficient(context),
               ),
             ),
             leading: Image.asset('assets/subjecticon.png'),

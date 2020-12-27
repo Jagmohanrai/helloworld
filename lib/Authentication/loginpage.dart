@@ -184,7 +184,7 @@ class _LoginPageState extends State<LoginPage> {
                                     setState(() {
                                       loading = false;
                                     });
-                                    Navigator.push(
+                                    Navigator.pushReplacement(
                                       context,
                                       MaterialPageRoute(
                                         builder: (context) => HomePage(

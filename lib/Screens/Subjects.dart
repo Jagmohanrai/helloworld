@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:helloworld/Components/subjectTile.dart';
+import 'package:helloworld/Screens/noteslist.dart';
 import 'package:helloworld/services.dart';
 
 class Subjects extends StatefulWidget {
@@ -50,10 +51,22 @@ class _SubjectsState extends State<Subjects> {
                         height: mq.size.height * 0.3,
                         child: Image.asset('assets/splash_bg.png')),
                     Container(
-                      height: mq.size.height * 0.60,
+                      height: mq.size.height * 0.65,
                       child: ListView.builder(
-                        itemBuilder: (context, i) => SubjectTile(
-                          subjectName: subject[i],
+                        itemBuilder: (context, i) => InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => NotesList(
+                                  subjectName: subject[i],
+                                ),
+                              ),
+                            );
+                          },
+                          child: SubjectTile(
+                            subjectName: subject[i],
+                          ),
                         ),
                         itemCount: subject.length,
                       ),
