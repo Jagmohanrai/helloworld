@@ -123,9 +123,34 @@ class _NotesListState extends State<NotesList> {
                                               showDialog(
                                                 context: context,
                                                 child: AlertDialog(
+                                                  titleTextStyle: TextStyle(
+                                                    fontSize: 20 *
+                                                        cst.responsiveCofficient(
+                                                            context),
+                                                    color: Colors.black,
+                                                  ),
                                                   title: Text('Topic Covered'),
                                                   content: Text(
-                                                      notes[i]['topicCovered']),
+                                                    notes[i]['topicCovered'],
+                                                  ),
+                                                  contentTextStyle: TextStyle(
+                                                    color: Colors.black,
+                                                    fontSize: 16 *
+                                                        cst.responsiveCofficient(
+                                                            context),
+                                                  ),
+                                                  contentPadding:
+                                                      EdgeInsets.only(
+                                                    left: 25 *
+                                                        cst.responsiveCofficient(
+                                                            context),
+                                                    top: 10 *
+                                                        cst.responsiveCofficient(
+                                                            context),
+                                                    bottom: 20 *
+                                                        cst.responsiveCofficient(
+                                                            context),
+                                                  ),
                                                 ),
                                               );
                                             },
