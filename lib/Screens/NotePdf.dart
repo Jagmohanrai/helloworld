@@ -86,7 +86,8 @@ class _PdfPageState extends State<PdfPage> {
                     style: TextStyle(color: Colors.blue),
                   )
                 ],
-              ))
+              ),
+            )
           : Container(),
     ));
   }
