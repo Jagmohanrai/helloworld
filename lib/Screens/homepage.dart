@@ -1,7 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:helloworld/Components/constants.dart' as ctn;
-import 'package:helloworld/Screens/Subjects.dart';
+import 'package:helloworld/Screens/SubjectsNotes.dart';
+import 'package:helloworld/Screens/SubjectsQP.dart';
 
 class HomePage extends StatefulWidget {
   final User user;
@@ -82,10 +83,22 @@ class _HomePageState extends State<HomePage> {
                         title: "Notes",
                       ),
                     ),
-                    buildHomeTile(
-                      size: mq.size,
-                      assetname: "assets/question.png",
-                      title: "Question Papers",
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SubjectQP(
+                              user: widget.user,
+                            ),
+                          ),
+                        );
+                      },
+                      child: buildHomeTile(
+                        size: mq.size,
+                        assetname: "assets/question.png",
+                        title: "Question Papers",
+                      ),
                     ),
                   ],
                 ),
